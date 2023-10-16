@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Establece la altura del body al 100% de la ventana (viewport height) */
+    overflow: hidden; /* Oculta el desbordamiento para evitar barras de desplazamiento */
+    font-size: 24px;
+}
+section {
+    padding: 50px;
+    text-align: center;
+    display: none;
+    animation: fadeIn 5s ease-in-out; /* Agrega una animación de disolución (fadeIn) */
+    font-family: 'Source Sans Pro', sans-serif; /* Aplica la fuente Source Sans Pro */
+    font-size: 24px;
+}
+
+section#inicio {
+    display: block;
+}
+
+/* Estilo para la animación de disolución */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Comienza con opacidad 0 (invisibilidad) */
+    }
+    to {
+        opacity: 1; /* Termina con opacidad 1 (total visibilidad) */
+    }
+}
+header {
+    background-color: #051f36;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Source Sans Pro', sans-serif; /* Aplica la fuente Source Sans Pro */
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+a {
+    color: rgb(252, 252, 252);
+    transition: 5s;
+}
+
+a:hover {
+   text-decoration:wavy;
+}
+
+section {
+    padding: 500px;
+    text-align: center;
+    display: none;
+    font-family: 'Source Sans Pro', sans-serif; /* Aplica la fuente Source Sans Pro */
+    font-size: 48px;
+    color:white;   
+}
+
+section#inicio {
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif; /* Aplica la fuente Source Sans Pro */
+    font-size: 48px;
+    color:white;   
+}
+
+nav ul li a:target {
+    color: #FF5733;
+}
+
+section:target {
+    background-color: #005954;
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif; /* Aplica la fuente Source Sans Pro */
+    font-size: 24px;
+    text-decoration-color: antiquewhite;
+    text-justify:initial;
+    /*height: 100vh;*/
+}
